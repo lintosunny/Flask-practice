@@ -1,0 +1,14 @@
+<!--this is if practice-->
+<html>
+    {% if results >= 50 %}
+    <h1>The result is pass and avg mark is {{results}}</h1>
+    {% else %}
+    <h1>The result is fail and avg mark is {{results}}</h1>
+    {% endif %}
+
+<!--this is loop practice-->
+    {% for mark in range(results | int) %}
+        {{mark}}
+    {% endfor %}
+
+</html>
